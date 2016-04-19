@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './lib/delegate_tracker'
+require_relative '../lib/delegate_tracker'
 
 DelegateTracker::CLI.new.call
 
