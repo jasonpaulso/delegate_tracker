@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-enter delegate-tracker in your command line to start the gem.
+To start the gem execute:
+```
+ delegate-tracker
+```
 
 ## Development
 
