@@ -21,12 +21,14 @@ class DelegateTracker::CLI
   end
 
   def party_selection
-    party_selection = prompt(parties)
-    case party_selection
-    when "1"
-      candidate_selection_list("democrat")
-    when "2"
-      candidate_selection_list("republican")
+    # party_selection = prompt(parties)
+    until [party_selection = prompt(parties).downcase].include?('q')
+      case party_selection
+      when "1"
+        candidate_selection_list("democrat")
+      when "2"
+        candidate_selection_list("republican")
+      end
     end
   end
   
